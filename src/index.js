@@ -5,13 +5,24 @@ const session = require('express-session');
 const sessionMysql = require('express-mysql-session');
 const passport = require('passport');
 const routes = require('./routes/index');
-
+const exphnbs = require('express-handlebars');
 
 //Inicializaciones
 const app = express();
 
 //Configuraciones
 app.set('port', process.env.PORT || 5000);
+app.set('views', path.join(__dirname, 'views'));
+
+app.engine('.hbs', exphnbs({
+    defaultLayout: 'index',
+    // layoutsDir: path.join(app.get('views'), 'layouts'),
+    // partialsDir: path.join(app.get('views'), 'partials'),
+    extname: '.hbs',
+    // helpers: require('./lib/handlebars')
+}));
+
+app.set('view engine', '.hbs');
 
 
 //Middlewares

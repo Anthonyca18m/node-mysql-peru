@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rest Perú</title>
+    {{!-- BOOSTRAP --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    {{!-- FONT AWESOME --}}
+    <script src="https://kit.fontawesome.com/d25d1a93fa.js" crossorigin="anonymous"></script>
+    {{!-- STYLES CUSTOME --}}
+    {{!-- <link rel="stylesheet" type="css" href="/css/styles.css"> --}}
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center bg-info text-light">
+                <h1>API Rest Perú</h1>
+            </div>
+            <div class="col-sm-12 card mt-3 shadow-sm pb-3">
+                <div class="card-body">
+                    <h5 class="card-title">API Rest</h5>
+                    <p class="card-text">Para consumir el API links debajo: </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        Obtener todos los departamentos : 
+                        <span class="text-info">
+                            <a href="https://rest-api-mysql-peru.herokuapp.com/departments" target="_blank">
+                                https://rest-api-mysql-peru.herokuapp.com/departments
+                            </a>
+                        </span>
+                        <span class="badge badge-primary">Copiar</span>
+                    </li>
+                    <li class="list-group-item">
+                        Obtener un departamento en especifico pasando su código : 
+                        <span class="text-info">
+                            <a href="https://rest-api-mysql-peru.herokuapp.com/departments/01" target="_blank">
+                                https://rest-api-mysql-peru.herokuapp.com/departments/01
+                            </a>
+                        </span>
+                        <span class="badge badge-primary">Copiar</span>
+                    </li>
+                </ul>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        Obtener todos las provincias : 
+                        <span class="text-info">
+                            <a href="https://rest-api-mysql-peru.herokuapp.com/provinces" target="_blank">
+                                https://rest-api-mysql-peru.herokuapp.com/provinces
+                            </a>
+                        </span>
+                        <span class="badge badge-primary">Copiar</span>
+                    </li>
+                    <li class="list-group-item">
+                        Obtener una provincia en especifico pasando su código : 
+                        <span class="text-info">
+                            <a href="https://rest-api-mysql-peru.herokuapp.com/provinces/0101" target="_blank">
+                                https://rest-api-mysql-peru.herokuapp.com/provinces/0101
+                            </a>
+                        </span>
+                        <span class="badge badge-primary">Copiar</span>
+                    </li>
+                </ul>
+                <ul class="list-group list-group-flush mb-5">
+                    <li class="list-group-item">
+                        Obtener todos las distritos : 
+                        <span class="text-info">
+                            <a href="https://rest-api-mysql-peru.herokuapp.com/districts" target="_blank">
+                                https://rest-api-mysql-peru.herokuapp.com/districts
+                            </a>
+                        </span>
+                        <span class="badge badge-primary">Copiar</span>
+                    </li>
+                    <li class="list-group-item">
+                        Obtener un distrito en especifico pasando su código : 
+                        <span class="text-info">
+                            <a href="https://rest-api-mysql-peru.herokuapp.com/districts/010101" target="_blank">
+                                https://rest-api-mysql-peru.herokuapp.com/districts/010101
+                            </a>
+                        </span>
+                        <span class="badge badge-primary">Copiar</span>
+                    </li>
+                </ul>
+                <ul class="list-group list-group-flush mb-5">
+                    <li class="list-group-item">
+                        Obtener todos las provincias de un departamento : 
+                        <span class="text-info">
+                            <a href="https://rest-api-mysql-peru.herokuapp.com/departments/01/provinces" target="_blank">
+                                https://rest-api-mysql-peru.herokuapp.com/departments/01/provinces
+                            </a>
+                        </span>
+                        <span class="badge badge-primary">Copiar</span>
+                    </li>
+                    <li class="list-group-item">
+                        Obtener todos los distritos de una provincia : 
+                        <span class="text-info">
+                            <a href="https://rest-api-mysql-peru.herokuapp.com/provinces/0101/districts" target="_blank">
+                                https://rest-api-mysql-peru.herokuapp.com/provinces/0101/districts
+                            </a>
+                        </span>
+                        <span class="badge badge-primary">Copiar</span>
+                    </li>
+                </ul>
+                <p>
+                    <a href="https://paypal.me/MCa291" target="_blank">Donaciones <span class="badge badge-primary">Paypal</span> Aquí</a>
+                </p>
+                <p>
+                    Creado por <a href="https:/github.com/Anthonyca18m" target="_blank">Anthonyca18m</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    {{!-- JS BOOSTRAP --}}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

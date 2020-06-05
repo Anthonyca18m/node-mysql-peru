@@ -11,10 +11,11 @@ const jwtAuth = require('../middleware/jwtAuth');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.json({
-        "status": 200,
-        "message": "Bienvenido al API de [Departamentos, Provincias, Distritos] del Perú"
-    });
+    // res.json({
+    //     "status": 200,
+    //     "message": "Bienvenido al API de [Departamentos, Provincias, Distritos] del Perú"
+    // });
+    res.render('layouts/index');
 });
 
 //Country
