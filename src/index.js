@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 
 //Routes
 // app.use(require('./routes'));
-app.use('/api', routes);
+app.use(routes);
 
 //Public 
 // app.use(express.static(path.join(__dirname, 'public')));
