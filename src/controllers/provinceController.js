@@ -124,4 +124,7 @@ provinceController.getProvinces = async (req, res) => {
     });
 };
 
+
+
+
 module.exports = provinceController;

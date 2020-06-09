@@ -49,7 +49,7 @@ router.delete('/districts/:id', jwtAuth, districtController.delete);
 router.get('/countries/:id/departments', departmentController.getDepartments);
 router.get('/departments/:id/provinces', provinceController.getProvinces);
 router.get('/provinces/:id/districts', districtController.getDistricts);
-
+router.get('/departments/provinces/districts/:id', districtController.getDistrictsAll);
 
 router.post('/signin', authController.signin);
 

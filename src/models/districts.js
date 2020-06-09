@@ -1,6 +1,7 @@
 const { Sequelize, DataTypes, Model } = require('sequelize');
 const sequelize = require('../Config/database');
 const Provinces = require('./provinces');
+const Deparments = require('./departments');
 
 class District extends Model {}
 
@@ -29,6 +30,7 @@ const Districts = District.init({
         modelName: 'Districts'
     });
 
+// Deparments.hasMany(Provinces, {as : 'Provinces2', foreignKey: 'departments_id'});    
 Provinces.hasMany(Districts, {as : 'Districts', foreignKey: 'provinces_id'});
 Districts.belongsTo(Provinces, {as : 'Provinces', foreignKey: 'provinces_id'});
 
